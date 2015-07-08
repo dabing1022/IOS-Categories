@@ -1,6 +1,6 @@
 //
 //  NSObject+GCD.m
-//  IOS-Categories
+//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
 //
 //  Created by Jakey on 14/12/15.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
@@ -24,6 +24,8 @@
 }
 - (void)performAfter:(NSTimeInterval)seconds block:(void(^)(void))block {
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, seconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_current_queue(), block);
+//    dispatch_after(popTime, dispatch_get_current_queue(), block);
+    dispatch_after(popTime, dispatch_get_main_queue(), block);
+
 }
 @end

@@ -1,7 +1,7 @@
 IOS-Categories
 ================
 
-IOS中的各种Objective-C Category, A collection of useful Objective-C categories extending functionality of some built in iOS and Cocoa objects
+IOS中的各种Objective-C Category, a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
 
 ## Foundation
 * NSArray
@@ -9,11 +9,11 @@ IOS中的各种Objective-C Category, A collection of useful Objective-C categori
 * NSData
 * NSDate
 * NSDateFormatter
+* NSNotificationCenter
 * NSDictionary
 * NSException
 * NSFileManager
 * NSIndexPath
-* NSManagedObjectContext
 * NSNumber
 * NSObject
 * NSSet
@@ -21,15 +21,16 @@ IOS中的各种Objective-C Category, A collection of useful Objective-C categori
 * NSTimer
 * NSURL
 * NSUserDefaults
+* NSHTTPCookieStorage
 
 ## UIKit
-* MKMapView
 * UIAlertView
 * UIApplication
 * UIBarButtonItem
 * UIBezierPath
 * UIButton
 * UIColor
+* UIFont
 * UIControl
 * UIDevice
 * UIImage
@@ -51,6 +52,19 @@ IOS中的各种Objective-C Category, A collection of useful Objective-C categori
 * UIViewController
 * UIWebView
 * UIWindow
+
+## QuartzCore
+* CALayer
+* CAMediaTimingFunction
+* CAAnimation
+* CAShapeLayer
+* CATransaction
+
+## CoreData
+* NSManagedObjectContext
+* NSFetchRequest
+* NSManagedObject
+* NSPersistentStoreCoordinator
 
 ## CoreLocation
 * CLLocationManager

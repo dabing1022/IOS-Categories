@@ -1,6 +1,6 @@
 //
 //  NSDictionaryDemoViewController.m
-//  IOS-Categories
+//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
 //
 //  Created by Jakey on 15/3/29.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
@@ -8,6 +8,7 @@
 
 #import "NSDictionaryDemoViewController.h"
 #import "NSDictionary+SafeAccess.h"
+#import "NSDictionary+Merge.h"
 @interface NSDictionaryDemoViewController ()
 
 @end
@@ -18,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
+    
     NSDictionary *responseObject;
     //__unused  只是用来屏蔽未使用警告
     __unused NSDictionary *d = [responseObject dictionaryForKey:@"object"];

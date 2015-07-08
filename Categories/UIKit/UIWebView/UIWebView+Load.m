@@ -1,6 +1,6 @@
 //
 //  UIWebView+loadURL.m
-//  IOS-Categories
+//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
 //
 //  Created by Jakey on 14/12/15.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
@@ -15,7 +15,7 @@
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     [self loadRequest:req];
 }
-- (void)loadHtml:(NSString*)htmlName{
+- (void)loadLocalHtml:(NSString*)htmlName{
     NSString *filePath = [[NSBundle mainBundle]pathForResource:htmlName ofType:@"html"];
     NSURL *url = [NSURL fileURLWithPath:filePath];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

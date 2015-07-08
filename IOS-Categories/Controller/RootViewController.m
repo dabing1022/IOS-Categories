@@ -1,6 +1,6 @@
 //
 //  RootViewController.m
-//  IOS-Categories
+//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
 //
 //  Created by Jakey on 14/12/15.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
@@ -17,11 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"IOS-Categories";
+    self.title = @"iOS-Categories";
     _items = @{
             @"UIKit":@[@"UIBezierPath",
                        @"UIButton",
                        @"UIColor",
+                       @"UIFont",
                        @"UIDevice",
                        @"UIImage",
                        @"UIImageView",
@@ -62,17 +63,28 @@
                         @"NSURL",
                         @"NSUserDefaults",
                         @"NSIndexPath",
-                        @"NSManagedObjectContext",
                         @"NSDateFormatter",
-                        @"NSNumber"
-                        
+                        @"NSNumber",
+                        @"NSNotificationCenter",
+                        @"NSHTTPCookieStorage"
                         ],
-         @"CoreLocation":@[
-                        @"CLLocation",
-                        @"CLLocationManager"
-                         ] ,
-            @"MapKit":@[
-                        @"MKMapView"
+            
+    @"CoreLocation":@[@"CALayer",
+                      @"CAMediaTimingFunction",
+                      @"CAAnimation",
+                      @"CAShapeLayer",
+                      @"CATransaction"
+                      ] ,
+            
+      @"QuartzCore":@[@"CLLocation",
+                      @"CLLocationManager"
+                     ] ,
+        @"CoreData":@[@"NSManagedObjectContext",
+                      @"NSFetchRequest",
+                      @"NSManagedObject",
+                      @"NSPersistentStoreCoordinator"
+                    ],
+         @"MapKit":@[@"MKMapView"
                         ]
                };
     [self.tableView reloadData];
