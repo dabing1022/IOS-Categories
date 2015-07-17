@@ -46,7 +46,8 @@
                        @"UIScreen",
                        @"UIControl",
                        @"UIApplication",
-                       @"UIBarButtonItem"
+                       @"UIBarButtonItem",
+                       @"UIPopoverController"
 
                        ],
         @"Foundation":@[@"NSArray",
@@ -66,7 +67,8 @@
                         @"NSDateFormatter",
                         @"NSNumber",
                         @"NSNotificationCenter",
-                        @"NSHTTPCookieStorage"
+                        @"NSHTTPCookieStorage",
+                        @"NSFileHandle"
                         ],
             
     @"CoreLocation":@[@"CALayer",
@@ -87,6 +89,7 @@
          @"MapKit":@[@"MKMapView"
                         ]
                };
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [self.tableView reloadData];
 }
 
@@ -103,7 +106,6 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
